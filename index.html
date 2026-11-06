@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manager Library · Biblioteca Comunitaria</title>
+  <meta name="description" content="Portal público de Manager Library. Conoce nuestro catálogo, categorías, horarios y políticas de préstamo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra de Navegación -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="brand">
+        <div class="brand-icon">📚</div>
+        <span class="brand-name">Manager<strong>Library</strong></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#politicas">Políticas</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="#contacto" class="btn btn-sm btn-primary">Visítanos</a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <div class="badge">🏛️ Ficha ADSO 3239188 · SENA</div>
+        <h1 class="hero-title">El conocimiento al alcance de toda la comunidad.</h1>
+        <p class="hero-description">
+          Bienvenido a <strong>Manager Library</strong>, el espacio donde convergen la literatura, la ciencia y la tecnología. 
+          Explora miles de títulos en nuestras cinco colecciones especializadas con un sistema de préstamo transparente y moderno.
+        </p>
+        <div class="hero-actions">
+          <a href="#categorias" class="btn btn-primary">Explorar Colecciones</a>
+          <a href="#politicas" class="btn btn-secondary">Cómo Funciona</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">5</span>
+            <span class="stat-label">Categorías Oficiales</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">14</span>
+            <span class="stat-label">Días de Préstamo</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Libros por Socio</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-card">
+          <div class="card-header-badge">📖 Libro Destacado</div>
+          <div class="book-mockup">
+            <div class="book-cover">
+              <span class="book-tag">Novela</span>
+              <h3>Cien años de soledad</h3>
+              <p>Gabriel García Márquez</p>
+              <div class="book-isbn">ISBN: 9780307474728</div>
+            </div>
+          </div>
+          <div class="status-indicator">
+            <span class="status-dot"></span> Préstamos abiertos hoy en sala
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categorías Oficiales (Spec: 5 fijas) -->
+  <section id="categorias" class="section bg-alt">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Colección</span>
+        <h2>Cinco Categorías Fundamentales</h2>
+        <p>Estructuradas para cubrir las necesidades formativas, recreativas e investigativas de nuestros socios.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="category-card">
+          <div class="category-icon">📖</div>
+          <h3>Novela</h3>
+          <p>Obras maestras de la narrativa universal, ficción contemporánea, clásicos latinoamericanos y relatos inolvidables.</p>
+          <span class="category-code">ID: 11111111-1111...</span>
+        </div>
+
+        <div class="category-card">
+          <div class="category-icon">🔬</div>
+          <h3>Ciencia</h3>
+          <p>Física, biología, astronomía, química y textos de divulgación científica rigurosa y accesible para curiosos del cosmos.</p>
+          <span class="category-code">ID: 22222222-2222...</span>
+        </div>
+
+        <div class="category-card">
+          <div class="category-icon">💻</div>
+          <h3>Tecnología</h3>
+          <p>Desarrollo de software, ingeniería, inteligencia artificial, arquitectura de sistemas y ciencias computacionales.</p>
+          <span class="category-code">ID: 33333333-3333...</span>
+        </div>
+
+        <div class="category-card">
+          <div class="category-icon">📜</div>
+          <h3>Historia</h3>
+          <p>Crónicas históricas, geopolítica, evolución de las civilizaciones, pensamiento crítico y análisis documental del pasado.</p>
+          <span class="category-code">ID: 44444444-4444...</span>
+        </div>
+
+        <div class="category-card">
+          <div class="category-icon">🎨</div>
+          <h3>Infantil</h3>
+          <p>Cuentos ilustrados, fábulas, aventuras didácticas y lecturas tempranas para inspirar el amor por la lectura en los más pequeños.</p>
+          <span class="category-code">ID: 55555555-5555...</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Políticas de Préstamo (Reglas de Negocio) -->
+  <section id="politicas" class="section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Reglamento</span>
+        <h2>Políticas de Préstamo Claras</h2>
+        <p>Conoce las reglas que garantizan la disponibilidad justa y equitativa para toda la comunidad.</p>
+      </div>
+
+      <div class="rules-grid">
+        <div class="rule-box">
+          <div class="rule-number">01</div>
+          <h4>Límite de Ejemplares</h4>
+          <p>Cada socio registrado puede tener en préstamo simultáneo un máximo de <strong>3 libros sin devolver</strong> a la vez.</p>
+        </div>
+
+        <div class="rule-box">
+          <div class="rule-number">02</div>
+          <h4>Plazo de 14 Días</h4>
+          <p>El periodo de préstamo es de <strong>14 días calendario exactos</strong> contados desde el instante de entrega.</p>
+        </div>
+
+        <div class="rule-box">
+          <div class="rule-number">03</div>
+          <h4>Política Cero Vencidos</h4>
+          <p>Si un socio tiene un libro con fecha vencida, se suspenden nuevos préstamos de inmediato hasta regularizar su devolución.</p>
+        </div>
+
+        <div class="rule-box">
+          <div class="rule-number">04</div>
+          <h4>Devolución Individual</h4>
+          <p>Puedes devolver los libros uno por uno a medida que los termines de leer sin necesidad de esperar a completar el lote.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios y Afiliación -->
+  <section id="servicios" class="section bg-alt">
+    <div class="container services-wrapper">
+      <div class="services-info">
+        <span class="section-tag">Afiliación</span>
+        <h2>¿Cómo ser Socio de la Biblioteca?</h2>
+        <p>Hacerte socio es completamente gratuito y te abre las puertas a nuestro catálogo físico y salas de estudio.</p>
+        <ul class="steps-list">
+          <li>
+            <div class="step-num">✓</div>
+            <div>
+              <strong>Presenta tu Documento:</strong> Solo requieres tu documento de identidad para el registro en mostrador.
+            </div>
+          </li>
+          <li>
+            <div class="step-num">✓</div>
+            <div>
+              <strong>Registro Único:</strong> El bibliotecario genera tu ficha con nombre completo y número de documento único.
+            </div>
+          </li>
+          <li>
+            <div class="step-num">✓</div>
+            <div>
+              <strong>Préstamo Inmediato:</strong> Selecciona hasta 3 títulos disponibles y recíbelos en el acto por 14 días.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hours-card" id="contacto">
+        <h3>📍 Horarios y Atención</h3>
+        <div class="hours-table">
+          <div class="hours-row">
+            <span>Lunes a Viernes</span>
+            <strong>8:00 a. m. – 6:00 p. m.</strong>
+          </div>
+          <div class="hours-row">
+            <span>Sábados</span>
+            <strong>9:00 a. m. – 2:00 p. m.</strong>
+          </div>
+          <div class="hours-row">
+            <span>Domingos y Festivos</span>
+            <strong>Cerrado</strong>
+          </div>
+        </div>
+        <div class="contact-box">
+          <p><strong>Ubicación:</strong> Sede Principal ADSO · Complejo Tecnológico SENA</p>
+          <p><strong>Contacto:</strong> biblioteca@manager-library.edu.co</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preguntas Frecuentes -->
+  <section id="preguntas" class="section">
+    <div class="container max-w-700">
+      <div class="section-header text-center">
+        <span class="section-tag">Ayuda</span>
+        <h2>Preguntas Frecuentes</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>¿Tiene algún costo el préstamo de libros?</summary>
+          <p>No, todos los servicios de consulta en sala y préstamo externo son 100% gratuitos para los socios registrados.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>¿Puedo prestar el mismo libro dos veces en el mismo préstamo?</summary>
+          <p>No, un préstamo no permite repetir el mismo título para asegurar la rotación de ejemplares entre todos los usuarios.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>¿Qué ocurre si se me pasa la fecha de los 14 días?</summary>
+          <p>El libro pasará a estado vencido (overdue), lo cual bloqueará la posibilidad de solicitar nuevos préstamos hasta que devuelvas el ejemplar.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Institucional -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-name">Manager<strong>Library</strong></span>
+        </div>
+        <p>Sistema integral de gestión de bibliotecas desarrollado bajo la metodología Spec-Driven Development (SDD).</p>
+      </div>
+      <div class="footer-meta">
+        <p><strong>Programa:</strong> Tecnólogo en Análisis y Desarrollo de Software (ADSO)</p>
+        <p><strong>Ficha:</strong> 3239188 · SENA Regional</p>
+        <p class="copyright">© 2026 Manager Library. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
